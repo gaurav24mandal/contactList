@@ -1,0 +1,42 @@
+ 
+
+body{
+    text-align: center;
+    background-color:white;
+    color: grey;
+    font-family: sans-serif;
+    margin: 25px
+     }
+    /** removing dots**/
+ul{
+    list-style: none;
+}
+#name {
+    display: flex;
+    justify-content: space-around;
+    background-color:hsl(222, 78%, 60%);
+     margin-left: 25%; 
+    width: 300px;
+    height: 40px;
+    margin-bottom: 2px;
+    color: white;
+    box-shadow: 0px 0px 2px grey;  
+    
+}
+#name2{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+#phone{
+    margin-top: 10px;
+    margin-left: 30px;
+}
+#name :hover {
+    cursor: pointer;
+    border-bottom: 1px solid black;
+    padding-bottom: 1px;
+}
+
+#form button{
+    border-style: dotted;
+}
