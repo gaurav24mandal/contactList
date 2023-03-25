@@ -20,7 +20,7 @@ app.use(express.static('assets'))
 
  //exceesing express and  dir files
 
-app.get('/',function(req,res){
+app.get('/',(req,res) =>{
     return res.render('home',{
         title:'conatcts',
         conatct_list:contactList
@@ -28,7 +28,7 @@ app.get('/',function(req,res){
 })
 
 // posting  file from forms on browser
-app.post('/create-contact', function (req, res) {
+app.post('/create-contact',  (req, res) =>{
     contact.create({
         name: req.body.name,
         phone: req.body.phone
@@ -43,7 +43,7 @@ app.post('/create-contact', function (req, res) {
 
 // deleting contact
 
-app.get('/delete-contact', function(req,res){
+app.get('/delete-contact', (req,res) =>{
     let phone=req.query.phone;
     let conatctIndex=contactList.findIndex(contact=> contact.phone==phone);
 
@@ -55,7 +55,7 @@ app.get('/delete-contact', function(req,res){
 
 // running server
 
-app.listen(port,function(err){
+app.listen(port,(err) =>{
 
     if(err){
         console.log('error',err);
